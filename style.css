@@ -1,0 +1,303 @@
+/************Defaults******/
+nav,
+header,
+footer {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+body {
+  line-height: 1;
+  margin: 0;
+}
+label {
+  font-family: "inter";
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+p {
+  font-size: 24px;
+  font-family: "inter";
+  line-height: 1.2;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+div.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.row::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-11 {
+  width: 100%;
+}
+div.left {
+  margin-left: 25%;
+}
+div.right {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+/*************** nav bar ***********/
+nav {
+  width: 100%;
+  margin: 0;
+}
+nav ul {
+  background-color: #000000;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "inter";
+}
+ul.topnav li {
+  list-style: none;
+  float: left;
+}
+ul.topnav li.topnav-right {
+  float: right;
+}
+ul.topnav li a {
+  font-weight: 400;
+  display: block;
+  text-decoration: none;
+  min-height: 16px;
+  text-align: center;
+  padding: 14px;
+  text-transform: uppercase;
+  color: white;
+}
+ul.topnav li:hover,
+ul.topnav li a:hover {
+  background-color: rgba(255, 255, 255, 0.89);
+  color: black;
+  transition: 0.7s;
+}
+ul.topnav li.dropdown {
+  display: none;
+}
+/***********gradient background*****/
+#grad1 {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+* {
+  box-sizing: border-box;
+}
+button {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 15px 60px;
+  font-size: 32px;
+  background: rgb(35, 148, 223);
+  border-radius: 7px;
+  font-weight: 700;
+  color: white;
+  display: block;
+  text-align: center;
+}
+button:hover {
+  background-color: black;
+  transition: 0.7s;
+}
+div.col-12 {
+  display: block;
+  margin: auto;
+}
+div.box {
+  float: right;
+  margin: 24px;
+  padding: 0 24px 40px 24px;
+  border-radius: 7px;
+
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 0 5px 0.5px rgba(0, 0, 0, 0.5), 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+}
+div.box img {
+  width: 80%;
+}
+div.slope img {
+  display: block;
+  margin: auto;
+  box-shadow: -2px -2px 7px 0.1px rgba(0, 0, 0, 0.5),
+    2px 2px 7px 0.1px rgba(0, 0, 0, 0.5);
+}
+div.slope img {
+  height: 250px;
+  width: 450px;
+}
+
+h1.large {
+  color: white;
+  margin: 0;
+  font-size: 50px;
+  line-height: 70px;
+  font-family: "inter";
+}
+h1.section2header {
+  text-align: center;
+  font-family: "inter";
+  font-size: 76px;
+}
+form h2 {
+  color: white;
+  font-family: "inter";
+}
+article {
+  font-size: 36px;
+  padding: 20px;
+  font-family: "inter";
+}
+.col {
+  margin-left: 10%;
+}
+
+input {
+  font-size: 20px;
+  width: 400px;
+  min-width: 100px;
+  padding: 5px;
+}
+footer.foot {
+  text-align: left;
+  padding-left: 10%;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: "Inter";
+  color: white;
+  list-style: none;
+}
+footer.foot h1 {
+  font-size: 25px;
+  padding: 0;
+}
+footer.foot ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer.foot ul li {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+/********mobile***********/
+@media screen and (max-width: 600px) {
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+  ul.topnav li.dropdown {
+    display: block;
+    float: right;
+  }
+  ul.topnav.responsive li.dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li {
+    display: inline;
+    float: none;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: center;
+  }
+  ul.topnav.responsive li a:hover {
+    background-color: rgba(255, 255, 255, 0.89);
+    color: black;
+  }
+  div.col-3,
+  div.col-6,
+  div.col-5,
+  div.col-7,
+  div.col-4 {
+    width: 100%;
+    margin: 0;
+  }
+  div.box {
+    padding: 2px;
+  }
+
+  .box label {
+    font-size: 34px;
+  }
+  h1.section2header {
+    text-align: center;
+    font-family: "inter";
+    font-size: 45px;
+  }
+  h1.large {
+    font-size: 45px;
+  }
+  div.left,
+  div.right {
+    margin-left: 15px;
+  }
+  input {
+    width: 350px;
+  }
+  div.video iframe {
+    margin-top: 20px;
+    position: relative;
+    width: 121%;
+    overflow: hidden;
+  }
+  div.slope {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+}
