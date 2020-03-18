@@ -116,7 +116,7 @@ ul.topnav li:hover,
 ul.topnav li a:hover {
   background-color: rgba(255, 255, 255, 0.89);
   color: black;
-  transition: 0.7s;
+  transition: 0.9s;
 }
 ul.topnav li.dropdown {
   display: none;
