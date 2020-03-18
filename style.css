@@ -258,6 +258,7 @@ footer.foot ul li {
   ul.topnav.responsive li a:hover {
     background-color: rgba(255, 255, 255, 0.89);
     color: black;
+    transition: 0.9s;
   }
   div.col-3,
   div.col-6,
